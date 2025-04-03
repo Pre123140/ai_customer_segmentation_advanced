@@ -14,6 +14,30 @@ A robust, machine learning-powered customer segmentation project built using Pyt
 ---
 
 ## 📁 Folder Structure
+customer_segmentation_adv/
+├── app/
+│   └── dashboard.py                  # Streamlit dashboard interface
+│
+├── src/
+│   ├── preprocess.py                # Data cleaning & feature engineering
+│   ├── clustering.py                # KMeans clustering logic
+│   ├── pca_analysis.py              # PCA transformation and plotting
+│   ├── eda.py                       # EDA visualizations and summaries
+│   ├── ai_insights.py               # Classification model for high spenders
+│   └── __init__.py
+│
+├── data/
+│   └── marketing_campaign.csv       # Raw input dataset
+│
+├── outputs/
+│   └── customer_segments.csv        # Exportable segmented data (from dashboard)
+│
+├── docs/
+│   └── Ai_Customer_Segmentation_Docs.md  # Detailed documentation & case study
+│
+├── README.md                        # Project summary and instructions
+└── requirements.txt                 # Required Python libraries
+
 
 
 ---
@@ -25,10 +49,6 @@ A robust, machine learning-powered customer segmentation project built using Pyt
 ```bash
 pip install -r requirements.txt
 
-
-
-
----
 
 ## 🚀 How to Run the Dashboard
 
@@ -38,25 +58,21 @@ pip install -r requirements.txt
 pip install -r requirements.txt
 
 ▶️ Launch the Streamlit dashboard
-
-bash
-Copy
-Edit
 streamlit run app/dashboard.py
-📁 Ensure the dataset is located at:
 
-bash
-Copy
-Edit
+📁 Ensure the dataset is located at:
 data/marketing_campaign.csv
+
 🧠 Features
-Feature	Description
-Feature Engineering	Derived columns: Age, TotalSpend, TenureDays, TotalChildren
-PCA	Dimensionality reduction + 2D cluster visualization
-EDA	Histograms, boxplots, correlation heatmaps
-KMeans Clustering	Segmentation based on behavior, spend, and engagement
-AI-Powered Predictions	Predicts high spenders using logistic regression
-Interactive Dashboard	View insights and export results with Streamlit
+Feature	                                                          Description
+Feature Engineering                                              	Derived columns: Age, TotalSpend, TenureDays, TotalChildren
+PCA	                                                              Dimensionality reduction + 2D cluster visualization
+EDA	                                                              Histograms, boxplots, correlation heatmaps
+KMeans Clustering	                                                Segmentation based on behavior, spend, and engagement
+AI-Powered Predictions                                           	Predicts high spenders using logistic regression
+Interactive Dashboard                                             	View insights and export results with Streamlit
+
+
 📊 Key Visualizations (In-Dashboard)
 PCA Scatter Plot (with cluster coloring)
 
@@ -68,6 +84,8 @@ Correlation Heatmap
 
 Histograms (Age, Tenure, Spend)
 
+
+
 🛠️ Tech Stack
 Languages: Python 3.9+
 
@@ -77,49 +95,32 @@ Machine Learning: PCA, KMeans, LogisticRegression
 
 Visualization: Seaborn, Matplotlib, Streamlit Components
 
+
+
 📚 Documentation
 Complete case study, conceptual explanation, and business impact can be found in:
 
-Copy
-Edit
-docs/Ai_Customer_Segmentation_Docs.md
+docs/ai_powered_customer_segmentation_advanced.md
+
 Includes:
-
 Business value of segmentation
-
 EDA and PCA use cases
-
 Unsupervised → semi-supervised AI transition
-
 Future of segmentation in 2025 and beyond
 
-📷 Screenshots (Optional)
-You can add visual previews of your dashboard by uploading images to /assets/ or linking them here.
+
 
 📥 Dataset
 marketing_campaign.csv used as the raw dataset (source: public retail dataset)
 
 Must be located in the /data folder before launching the app
 
+
 📦 Output
 customer_segments.csv generated via dashboard after clustering & prediction
 
 Includes cluster labels and high spender predictions
 
-✅ GitHub Upload Checklist
- app/dashboard.py
-
- All source scripts in src/
-
- data/marketing_campaign.csv
-
- outputs/customer_segments.csv
-
- docs/Ai_Customer_Segmentation_Docs.md
-
- README.md
-
- requirements.txt
 
 🙌 Author
 👩‍💻 Prerna Burande
@@ -128,17 +129,3 @@ Includes cluster labels and high spender predictions
 
 📝 License
 This project is licensed under the MIT License.
-
-🏷 Tags
-AI Customer Segmentation EDA PCA Clustering Streamlit Dashboard Unsupervised Learning 2025 Business Strategy Retail Analytics
-
-yaml
-Copy
-Edit
-
----
-
-Would you like me to now:
-- Generate the `requirements.txt` file for this project?
-- Create placeholder dashboard screenshots for GitHub?
-- Or help you push it all to your GitHub repo with instructions?
