@@ -73,6 +73,19 @@ streamlit run app/dashboard.py
 
 ### 3. 📁 Ensure Dataset Location
 The file `marketing_campaign.csv` must be placed in the `/data` directory before launching.
+
+> ⚠️ **Note:** The `customer_segments.csv` file is **not automatically saved to disk**.
+> 
+> 🟡 It is only offered as a downloadable file from the Streamlit dashboard using:
+> ```python
+> st.download_button(..., file_name="customer_segments.csv")
+> ```
+> 
+> To save it manually in the code, add:
+> ```python
+> df.to_csv("outputs/customer_segments.csv", index=False)
+> ```
+
 ---
 
 ## 📊 Dashboard Visuals
