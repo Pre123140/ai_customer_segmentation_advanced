@@ -59,18 +59,20 @@ customer_segmentation_adv/
 
 ---
 
-## ▶️ How to Run the Project
+## ⚖️ How to Run the Project
 
+### 1. 📦 Install Dependencies
 ```bash
-# Step 1: Install dependencies
 pip install -r requirements.txt
+```
 
-# Step 2: Launch the Streamlit dashboard
+### 2. ▶️ Launch Streamlit App
+```bash
 streamlit run app/dashboard.py
 ```
 
-📁 Ensure `data/marketing_campaign.csv` is placed correctly.
-
+### 3. 📁 Ensure Dataset Location
+The file `marketing_campaign.csv` must be placed in the `/data` directory before launching.
 ---
 
 ## 📊 Dashboard Visuals
@@ -96,7 +98,7 @@ streamlit run app/dashboard.py
   - High spender predictions
   - PCA components (PC1, PC2)
   - Demographics and behavioral fields
-
+🟡 This does not actually save the file to outputs/customer_segments.csv. It only offers a download via Streamlit.
 ---
 
 ## 🛠️ Tech Stack
@@ -108,7 +110,7 @@ streamlit run app/dashboard.py
 
 ## 📚 Documentation
 📄 Read the full business & technical walkthrough:  
-📘 [`docs/Ai_Customer_Segmentation_Docs.md`](./docs/Ai_Customer_Segmentation_Docs.md)
+📘 ['Conceptual Study`](https://github.com/Pre123140/ai_customer_segmentation_advanced/blob/main/AI_POWERED_CUSTOMER_SEGMENTATION%20(ADVANCED).pdf)
 
 Includes:
 - EDA, PCA, clustering walkthrough
